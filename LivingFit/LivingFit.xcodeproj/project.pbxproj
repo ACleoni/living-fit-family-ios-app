@@ -36,9 +36,13 @@
 		AEA1819029BAA8BB0048DE96 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEA1817D29BAA8BB0048DE96 /* OFL.txt */; };
 		AEA1819129BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA1817E29BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf */; };
 		AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5EC29BAB41C007FDC46 /* SignInView.swift */; };
-		AEABE5F329BAB74C007FDC46 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */; };
 		AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */; };
 		AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */; };
+		AEABE5FC29BACF27007FDC46 /* SecureTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5FB29BACF27007FDC46 /* SecureTextFieldView.swift */; };
+		AEABE5FE29BACF45007FDC46 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5FD29BACF45007FDC46 /* TextFieldView.swift */; };
+		AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */; };
+		AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60129BADBF2007FDC46 /* ButtonView.swift */; };
+		AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +94,13 @@
 		AEA1817E29BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		AEABE5E829BAB291007FDC46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEABE5EC29BAB41C007FDC46 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
 		AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFTextFieldStyle.swift; sourceTree = "<group>"; };
 		AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
+		AEABE5FB29BACF27007FDC46 /* SecureTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldView.swift; sourceTree = "<group>"; };
+		AEABE5FD29BACF45007FDC46 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModifier.swift; sourceTree = "<group>"; };
+		AEABE60129BADBF2007FDC46 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPrimitiveButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,7 +269,9 @@
 		AEABE5F129BAB711007FDC46 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */,
+				AEABE5FB29BACF27007FDC46 /* SecureTextFieldView.swift */,
+				AEABE5FD29BACF45007FDC46 /* TextFieldView.swift */,
+				AEABE60129BADBF2007FDC46 /* ButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -270,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */,
+				AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -278,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */,
+				AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -439,11 +451,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */,
 				AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */,
 				AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */,
+				AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */,
+				AEABE5FE29BACF45007FDC46 /* TextFieldView.swift in Sources */,
 				AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */,
+				AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */,
 				AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */,
-				AEABE5F329BAB74C007FDC46 /* InputTextFieldView.swift in Sources */,
+				AEABE5FC29BACF27007FDC46 /* SecureTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ struct LFTextFieldStyle: TextFieldStyle {
             .frame(maxWidth: .infinity, minHeight: 56)
             .padding(.leading, 16)
             .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .stroke(Color(red: 0.8470588235294118, green: 0.8549019607843137, blue: 0.8627450980392157)))
+                .stroke(Color(hex: "D8DADC")))
             .disableAutocorrection(true)
             .focused($isFocused)
             .onTapGesture {

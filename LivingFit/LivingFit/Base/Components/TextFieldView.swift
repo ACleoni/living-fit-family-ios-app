@@ -7,25 +7,22 @@
 
 import SwiftUI
 
-struct InputTextFieldView: View {
+struct TextFieldView: View {
     @Binding var text: String;
     let placeholder: String;
     let keyboardType: UIKeyboardType;
-    let sfSymbol: String?
-    
-    private let textFiledLeading: CGFloat = 30
-    
+        
     var body: some View {
         TextField(placeholder, text: $text)
             .textFieldStyle(LFTextFieldStyle())
             .font(.custom("Poppins-Regular", size: 16))
-            .keyboardType(.emailAddress)
+            .keyboardType(keyboardType)
     }
 }
 
-struct InputTextFieldView_Previews: PreviewProvider {
+struct TextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        InputTextFieldView(text: .constant(""), placeholder: "Email" , keyboardType: .emailAddress, sfSymbol: "envelope")
+        TextFieldView(text: .constant(""), placeholder: "Email" , keyboardType: .emailAddress)
             .preview(with: "Input Text Field")
     }
 }
