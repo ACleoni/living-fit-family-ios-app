@@ -86,7 +86,6 @@
 		AEA1817C29BAA8BB0048DE96 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		AEA1817D29BAA8BB0048DE96 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		AEA1817E29BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		AEA1819229BAA9820048DE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +138,6 @@
 		AE48D46129BA914000FB4BF7 /* LivingFit */ = {
 			isa = PBXGroup;
 			children = (
-				AEA1819229BAA9820048DE96 /* Info.plist */,
 				AEA1816629BAA5680048DE96 /* Resources */,
 				AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */,
 				AE48D46429BA914000FB4BF7 /* ContentView.swift */,
