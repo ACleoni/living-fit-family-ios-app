@@ -31,7 +31,6 @@ struct LFPrimitiveButtonStyle: PrimitiveButtonStyle {
                 }
             
             return configuration.label
-            //                .background(Color.green)
                 .opacity(pressed ? 0.2 : 1.0)
                 .gesture(longPress)
         }

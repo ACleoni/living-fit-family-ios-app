@@ -14,37 +14,67 @@ struct SignInView: View {
     
     var body: some View {
         VStack {
-            Image("Logo")
-                .resizable()
-                .frame(width: 80, height: 80)
-                .foregroundColor(.accentColor)
-            Text("Welcome Back!")
-                .font(.custom("Poppins-SemiBold", size: 30))
-            Text("Please sign in to your account")
-                .font(.custom("Poppins-Regular", size: 15)).opacity(0.70)
-                .padding(.bottom)
-            TextFieldView(text: $email, placeholder: "Email Address", keyboardType: .emailAddress)
+            VStack {
+                Image("Alternate Logo")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 100)
+                Text("Welcome Back!")
+                    .font(.custom("Poppins-SemiBold", size: 30))
+                Text("Please sign in to your account")
+                    .font(.custom("Poppins-Regular", size: 15)).opacity(0.70)
+                    .padding(.bottom)
+            }
+            
+            VStack {
+                TextFieldView(text: $email, placeholder: "Email Address", keyboardType: .emailAddress)
+                
+                HStack {
+                    if !showPassword {
+                        SecureTextFieldView(password: $password, placeholder: "Password", keyboardType: .default)
+                    } else {
+                        TextFieldView(text: $password, placeholder: "Password", keyboardType: .default)
+                    }
+                }.overlay(alignment: .trailing) {
+                    Image(showPassword ? "show" : "hide")
+                        .resizable()
+                        .frame(width: 24, height: 26)
+                        .opacity(0.60)
+                        .padding(.trailing)
+                        .onTapGesture {
+                            showPassword.toggle()
+                        }
+                }
+            }
             
             HStack {
-                if !showPassword {
-                    SecureTextFieldView(password: $password, placeholder: "Password", keyboardType: .default)
-                } else {
-                    TextFieldView(text: $password, placeholder: "Password", keyboardType: .default)
-                }
-            }.overlay(alignment: .trailing) {
-                Image(systemName: showPassword ? "eye.circle" : "eye.slash")
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                    .padding(.trailing)
-                    .onTapGesture {
-                        showPassword.toggle()
-                    }
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Text("Forgot Password?")
+                        .foregroundColor(.colorPrimary)
+                })
             }
             
-            ButtonView(title: "Sign In") {
-                
+//            HStack {
+                ButtonView(title: "Sign In") {
+                    
+                }
+//            }
+            
+            HStack {
+                HorizontalLineView()
+                Text("or")
+                HorizontalLineView()
             }
-        }.padding().ignoresSafeArea(.keyboard)
+            VStack {
+                LoginProviderView(provider: "apple")
+                LoginProviderView(provider: "google")
+
+            }
+            Spacer()
+        }.padding().ignoresSafeArea(.keyboard, edges: .bottom)
     }
 }
 

@@ -43,6 +43,11 @@
 		AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */; };
 		AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60129BADBF2007FDC46 /* ButtonView.swift */; };
 		AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */; };
+		AEC4973629BB169500363E32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4973529BB169500363E32 /* SplashView.swift */; };
+		AEC4973A29BB1DD300363E32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4973929BB1DD300363E32 /* MainView.swift */; };
+		AEC4973C29BB1E0700363E32 /* onboarding.MOV in Resources */ = {isa = PBXBuildFile; fileRef = AEC4973B29BB1E0700363E32 /* onboarding.MOV */; };
+		AEDCF0FF29BAFB7D00ABBE35 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */; };
+		AEDCF10129BAFDA900ABBE35 /* LoginProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,11 @@
 		AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModifier.swift; sourceTree = "<group>"; };
 		AEABE60129BADBF2007FDC46 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPrimitiveButtonStyle.swift; sourceTree = "<group>"; };
+		AEC4973529BB169500363E32 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AEC4973929BB1DD300363E32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AEC4973B29BB1E0700363E32 /* onboarding.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = onboarding.MOV; sourceTree = "<group>"; };
+		AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
+		AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,7 @@
 		AE48D46129BA914000FB4BF7 /* LivingFit */ = {
 			isa = PBXGroup;
 			children = (
+				AEC4973B29BB1E0700363E32 /* onboarding.MOV */,
 				AEABE5F029BAB708007FDC46 /* Base */,
 				AEABE5EA29BAB3FE007FDC46 /* Presentation */,
 				AEABE5E829BAB291007FDC46 /* Info.plist */,
@@ -235,6 +246,8 @@
 		AEABE5EA29BAB3FE007FDC46 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AEC4973729BB1DBC00363E32 /* Main */,
+				AEC4973329BB167100363E32 /* Splash */,
 				AEABE5EB29BAB408007FDC46 /* SignIn */,
 			);
 			path = Presentation;
@@ -272,6 +285,8 @@
 				AEABE5FB29BACF27007FDC46 /* SecureTextFieldView.swift */,
 				AEABE5FD29BACF45007FDC46 /* TextFieldView.swift */,
 				AEABE60129BADBF2007FDC46 /* ButtonView.swift */,
+				AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */,
+				AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -292,6 +307,38 @@
 				AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		AEC4973329BB167100363E32 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4973429BB167E00363E32 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AEC4973429BB167E00363E32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4973529BB169500363E32 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEC4973729BB1DBC00363E32 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4973829BB1DC800363E32 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AEC4973829BB1DC800363E32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4973929BB1DD300363E32 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,6 +471,7 @@
 				AEA1818329BAA8BB0048DE96 /* Poppins-Thin.ttf in Resources */,
 				AEA1818629BAA8BB0048DE96 /* Poppins-BoldItalic.ttf in Resources */,
 				AEA1816929BAA5890048DE96 /* GoogleService-Info.plist in Resources */,
+				AEC4973C29BB1E0700363E32 /* onboarding.MOV in Resources */,
 				AEA1818D29BAA8BB0048DE96 /* Poppins-ThinItalic.ttf in Resources */,
 				AEA1818029BAA8BB0048DE96 /* Poppins-MediumItalic.ttf in Resources */,
 				AEA1818829BAA8BB0048DE96 /* Poppins-ExtraLight.ttf in Resources */,
@@ -452,13 +500,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */,
+				AEC4973A29BB1DD300363E32 /* MainView.swift in Sources */,
+				AEDCF10129BAFDA900ABBE35 /* LoginProviderView.swift in Sources */,
 				AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */,
 				AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */,
 				AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */,
+				AEC4973629BB169500363E32 /* SplashView.swift in Sources */,
 				AEABE5FE29BACF45007FDC46 /* TextFieldView.swift in Sources */,
 				AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */,
 				AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */,
 				AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */,
+				AEDCF0FF29BAFB7D00ABBE35 /* HorizontalLineView.swift in Sources */,
 				AEABE5FC29BACF27007FDC46 /* SecureTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

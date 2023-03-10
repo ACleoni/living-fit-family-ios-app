@@ -12,7 +12,7 @@ struct LFTextFieldStyle: TextFieldStyle {
     
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .frame(maxWidth: .infinity, minHeight: 56)
+            .frame(maxWidth: .infinity, minHeight: 54)
             .padding(.leading, 16)
             .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .stroke(Color(hex: "D8DADC")))

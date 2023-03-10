@@ -32,7 +32,7 @@ struct LivingFitApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SignInView()
+                SplashView()
             }
         }
     }
