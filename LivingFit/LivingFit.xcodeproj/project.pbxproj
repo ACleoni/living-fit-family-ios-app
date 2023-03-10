@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */; };
-		AE48D46529BA914000FB4BF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48D46429BA914000FB4BF7 /* ContentView.swift */; };
 		AE48D46729BA914200FB4BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE48D46629BA914200FB4BF7 /* Assets.xcassets */; };
 		AE48D46A29BA914200FB4BF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE48D46929BA914200FB4BF7 /* Preview Assets.xcassets */; };
 		AE48D47429BA914200FB4BF7 /* LivingFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48D47329BA914200FB4BF7 /* LivingFitTests.swift */; };
@@ -36,6 +35,10 @@
 		AEA1818F29BAA8BB0048DE96 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA1817C29BAA8BB0048DE96 /* Poppins-ExtraBoldItalic.ttf */; };
 		AEA1819029BAA8BB0048DE96 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = AEA1817D29BAA8BB0048DE96 /* OFL.txt */; };
 		AEA1819129BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA1817E29BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf */; };
+		AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5EC29BAB41C007FDC46 /* SignInView.swift */; };
+		AEABE5F329BAB74C007FDC46 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */; };
+		AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */; };
+		AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +61,6 @@
 /* Begin PBXFileReference section */
 		AE48D45F29BA914000FB4BF7 /* LivingFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingFitApp.swift; sourceTree = "<group>"; };
-		AE48D46429BA914000FB4BF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE48D46629BA914200FB4BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE48D46929BA914200FB4BF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE48D46F29BA914200FB4BF7 /* LivingFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivingFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,11 @@
 		AEA1817C29BAA8BB0048DE96 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		AEA1817D29BAA8BB0048DE96 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		AEA1817E29BAA8BB0048DE96 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		AEABE5E829BAB291007FDC46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEABE5EC29BAB41C007FDC46 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFTextFieldStyle.swift; sourceTree = "<group>"; };
+		AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +145,11 @@
 		AE48D46129BA914000FB4BF7 /* LivingFit */ = {
 			isa = PBXGroup;
 			children = (
+				AEABE5F029BAB708007FDC46 /* Base */,
+				AEABE5EA29BAB3FE007FDC46 /* Presentation */,
+				AEABE5E829BAB291007FDC46 /* Info.plist */,
 				AEA1816629BAA5680048DE96 /* Resources */,
 				AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */,
-				AE48D46429BA914000FB4BF7 /* ContentView.swift */,
 				AE48D46629BA914200FB4BF7 /* Assets.xcassets */,
 				AE48D46829BA914200FB4BF7 /* Preview Content */,
 			);
@@ -213,6 +222,64 @@
 				AEA1817A29BAA8BB0048DE96 /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AEABE5EA29BAB3FE007FDC46 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5EB29BAB408007FDC46 /* SignIn */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AEABE5EB29BAB408007FDC46 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5EE29BAB42E007FDC46 /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		AEABE5EE29BAB42E007FDC46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5EC29BAB41C007FDC46 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AEABE5F029BAB708007FDC46 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5F729BACD23007FDC46 /* Modifiers */,
+				AEABE5F429BAC689007FDC46 /* Styles */,
+				AEABE5F129BAB711007FDC46 /* Components */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AEABE5F129BAB711007FDC46 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5F229BAB74C007FDC46 /* InputTextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AEABE5F429BAC689007FDC46 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5F529BAC6AF007FDC46 /* LFTextFieldStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		AEABE5F729BACD23007FDC46 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AEABE5F829BACD41007FDC46 /* PreviewLayoutComponentModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE48D46529BA914000FB4BF7 /* ContentView.swift in Sources */,
+				AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */,
+				AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */,
+				AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */,
 				AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */,
+				AEABE5F329BAB74C007FDC46 /* InputTextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +613,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,7 +646,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
