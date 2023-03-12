@@ -53,12 +53,15 @@ struct GenderSelectionView: View {
                     .padding(.top)
                 }
             }
-            ButtonView(title: "Continue") {
-                
+            NavigationLink(destination: HeightSelectionView()) {
+                ButtonView(title: "Continue") {
+                    
+                }
             }
-        }.padding()
-            .navigationBarTitle("Step 1 of 5").font(.custom("Poppins-Medium", size: 15))
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .padding()
+        .navigationBarTitle("Step 1 of 5").font(.custom("Poppins-Medium", size: 15))
+        .navigationBarTitleDisplayMode(.inline)
     
         
     }

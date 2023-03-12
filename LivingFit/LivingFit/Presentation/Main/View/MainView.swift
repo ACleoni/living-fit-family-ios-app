@@ -80,10 +80,11 @@ struct MainView: View {
                             .padding(.bottom)
                         
                         
-                            NavigationLink(destination: GenderSelectionView()) {
-                                ButtonView(title: "Get Started") {
-                                }
+                        NavigationLink(destination: GenderSelectionView()) {
+                            ButtonView(title: "Get Started") {
+                                
                             }
+                        }
                         
                         .padding(.bottom)
                         NavigationLink(destination: SignInView()) {

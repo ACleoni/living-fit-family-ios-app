@@ -89,26 +89,7 @@ struct SignInView: View {
                 LoginProviderView(provider: "apple")
                 LoginProviderView(provider: "google")
                 
-            }.padding(.bottom)
-            
-//            HStack {
-//                Text("By signing up you agree to Living Fit's ")
-//                    .font(.custom("Poppins-Regular", size: 12)) +
-//                Text(" Terms of Service ").underline()
-//                    .font(.custom("Poppins-Bold", size: 12)) +
-//                Text("and ")
-//                    .font(.custom("Poppins-Light", size: 12)) +
-//                Text("Membership Terms ")
-//                    .font(.custom("Poppins-Bold", size: 12)).underline() +
-//                Text("and ")
-//                    .font(.custom("Poppins-Light", size: 12)) +
-//                Text("Privacy Policy")
-//                    .font(.custom("Poppins-Bold", size: 12)).underline()
-//            }
-//            .foregroundColor(Color(hex: "363636"))
-//            .multilineTextAlignment(.center)
-//            .lineSpacing(2.0)
-            
+            }
             Spacer()
         }
         .padding()
