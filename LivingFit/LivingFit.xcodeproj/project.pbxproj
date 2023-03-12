@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE16A46929BD22BD00932B3A /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE16A46829BD22BD00932B3A /* GenderSelectionView.swift */; };
+		AE16A46E29BD2CF800932B3A /* RadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE16A46D29BD2CF800932B3A /* RadioButtonView.swift */; };
 		AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */; };
 		AE48D46729BA914200FB4BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE48D46629BA914200FB4BF7 /* Assets.xcassets */; };
 		AE48D46A29BA914200FB4BF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE48D46929BA914200FB4BF7 /* Preview Assets.xcassets */; };
@@ -43,9 +45,9 @@
 		AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */; };
 		AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60129BADBF2007FDC46 /* ButtonView.swift */; };
 		AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */; };
+		AEB8799A29BBBCA50085DA3A /* onboarding.mov in Resources */ = {isa = PBXBuildFile; fileRef = AEB8799929BBBCA50085DA3A /* onboarding.mov */; };
 		AEC4973629BB169500363E32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4973529BB169500363E32 /* SplashView.swift */; };
 		AEC4973A29BB1DD300363E32 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC4973929BB1DD300363E32 /* MainView.swift */; };
-		AEC4973C29BB1E0700363E32 /* onboarding.MOV in Resources */ = {isa = PBXBuildFile; fileRef = AEC4973B29BB1E0700363E32 /* onboarding.MOV */; };
 		AEDCF0FF29BAFB7D00ABBE35 /* HorizontalLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */; };
 		AEDCF10129BAFDA900ABBE35 /* LoginProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE16A46829BD22BD00932B3A /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		AE16A46D29BD2CF800932B3A /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
 		AE48D45F29BA914000FB4BF7 /* LivingFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivingFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE48D46229BA914000FB4BF7 /* LivingFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingFitApp.swift; sourceTree = "<group>"; };
 		AE48D46629BA914200FB4BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,9 +110,9 @@
 		AEABE5FF29BAD4AF007FDC46 /* ColorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModifier.swift; sourceTree = "<group>"; };
 		AEABE60129BADBF2007FDC46 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AEABE60329BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFPrimitiveButtonStyle.swift; sourceTree = "<group>"; };
+		AEB8799929BBBCA50085DA3A /* onboarding.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = onboarding.mov; sourceTree = "<group>"; };
 		AEC4973529BB169500363E32 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		AEC4973929BB1DD300363E32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		AEC4973B29BB1E0700363E32 /* onboarding.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = onboarding.MOV; sourceTree = "<group>"; };
 		AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLineView.swift; sourceTree = "<group>"; };
 		AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE16A46429BD228000932B3A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AE16A46F29BD792600932B3A /* AgeSelection */,
+				AE16A46529BD228A00932B3A /* GenderSelection */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AE16A46529BD228A00932B3A /* GenderSelection */ = {
+			isa = PBXGroup;
+			children = (
+				AE16A46629BD229400932B3A /* View */,
+			);
+			path = GenderSelection;
+			sourceTree = "<group>";
+		};
+		AE16A46629BD229400932B3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE16A46829BD22BD00932B3A /* GenderSelectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE16A46F29BD792600932B3A /* AgeSelection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AgeSelection;
+			sourceTree = "<group>";
+		};
 		AE48D45629BA914000FB4BF7 = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +199,7 @@
 		AE48D46129BA914000FB4BF7 /* LivingFit */ = {
 			isa = PBXGroup;
 			children = (
-				AEC4973B29BB1E0700363E32 /* onboarding.MOV */,
+				AEB8799929BBBCA50085DA3A /* onboarding.mov */,
 				AEABE5F029BAB708007FDC46 /* Base */,
 				AEABE5EA29BAB3FE007FDC46 /* Presentation */,
 				AEABE5E829BAB291007FDC46 /* Info.plist */,
@@ -246,6 +282,7 @@
 		AEABE5EA29BAB3FE007FDC46 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AE16A46429BD228000932B3A /* Onboarding */,
 				AEC4973729BB1DBC00363E32 /* Main */,
 				AEC4973329BB167100363E32 /* Splash */,
 				AEABE5EB29BAB408007FDC46 /* SignIn */,
@@ -287,6 +324,7 @@
 				AEABE60129BADBF2007FDC46 /* ButtonView.swift */,
 				AEDCF0FE29BAFB7D00ABBE35 /* HorizontalLineView.swift */,
 				AEDCF10029BAFDA900ABBE35 /* LoginProviderView.swift */,
+				AE16A46D29BD2CF800932B3A /* RadioButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -470,8 +508,8 @@
 				AEA1818929BAA8BB0048DE96 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				AEA1818329BAA8BB0048DE96 /* Poppins-Thin.ttf in Resources */,
 				AEA1818629BAA8BB0048DE96 /* Poppins-BoldItalic.ttf in Resources */,
+				AEB8799A29BBBCA50085DA3A /* onboarding.mov in Resources */,
 				AEA1816929BAA5890048DE96 /* GoogleService-Info.plist in Resources */,
-				AEC4973C29BB1E0700363E32 /* onboarding.MOV in Resources */,
 				AEA1818D29BAA8BB0048DE96 /* Poppins-ThinItalic.ttf in Resources */,
 				AEA1818029BAA8BB0048DE96 /* Poppins-MediumItalic.ttf in Resources */,
 				AEA1818829BAA8BB0048DE96 /* Poppins-ExtraLight.ttf in Resources */,
@@ -501,12 +539,14 @@
 			files = (
 				AEABE60429BAE0F6007FDC46 /* LFPrimitiveButtonStyle.swift in Sources */,
 				AEC4973A29BB1DD300363E32 /* MainView.swift in Sources */,
+				AE16A46929BD22BD00932B3A /* GenderSelectionView.swift in Sources */,
 				AEDCF10129BAFDA900ABBE35 /* LoginProviderView.swift in Sources */,
 				AEABE5ED29BAB41C007FDC46 /* SignInView.swift in Sources */,
 				AEABE5F629BAC6AF007FDC46 /* LFTextFieldStyle.swift in Sources */,
 				AEABE60229BADBF2007FDC46 /* ButtonView.swift in Sources */,
 				AEC4973629BB169500363E32 /* SplashView.swift in Sources */,
 				AEABE5FE29BACF45007FDC46 /* TextFieldView.swift in Sources */,
+				AE16A46E29BD2CF800932B3A /* RadioButtonView.swift in Sources */,
 				AEABE5F929BACD41007FDC46 /* PreviewLayoutComponentModifier.swift in Sources */,
 				AEABE60029BAD4AF007FDC46 /* ColorModifier.swift in Sources */,
 				AE48D46329BA914000FB4BF7 /* LivingFitApp.swift in Sources */,
@@ -681,7 +721,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -714,7 +754,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

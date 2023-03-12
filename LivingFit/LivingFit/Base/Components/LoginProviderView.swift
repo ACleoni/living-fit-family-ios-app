@@ -21,7 +21,7 @@ struct LoginProviderView: View {
             }.padding([.top, .bottom], 17)
                 .background(Color.white)
                 .padding([.leading, .trailing],45)
-                .frame(maxWidth: .infinity, maxHeight: 48)
+                .frame(maxWidth: .infinity, maxHeight: 56)
                 .overlay(RoundedRectangle(cornerRadius: 28)
                     .stroke(Color(red: 0.8470588235294118, green: 0.8549019607843137, blue: 0.8627450980392157), lineWidth: 1))
                 
@@ -31,7 +31,12 @@ struct LoginProviderView: View {
 
 struct LoginProviderView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderView(provider: "apple")
-            .preview(with: "Login Provider")
+        Group {
+            LoginProviderView(provider: "apple")
+                .preview(with: "Login with Apple Preview")
+            
+            LoginProviderView(provider: "google")
+                .preview(with: "Login with Google Preview")
+        }
     }
 }

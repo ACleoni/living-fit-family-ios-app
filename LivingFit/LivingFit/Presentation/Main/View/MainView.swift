@@ -30,7 +30,7 @@ class LoopingPlayerUIView: UIView {
         super.init(frame: frame)
         
         // Load the resource -> h
-        let fileUrl = Bundle.main.url(forResource: "onboarding", withExtension: "MOV")!
+        let fileUrl = Bundle.main.url(forResource: "onboarding", withExtension: "mov")!
         let asset = AVAsset(url: fileUrl)
         let item = AVPlayerItem(asset: asset)
         // Setup the player
@@ -63,71 +63,42 @@ struct MainView: View {
                     Rectangle()
                         .fill(LinearGradient(gradient: Gradient(colors: [.black.opacity(0.0), .black.opacity(1.0)]), startPoint: .top, endPoint: .bottom))
                         .frame(width: geo.size.width, height: geo.size.height)
+                    
+                    Image("Full Logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 180, height: 180)
+                        .padding(.zero)
+                    
+                    
+                    VStack {
+                        Spacer()
+                        Text("Atlanta’s #1 In Person Training Available Worldwide")
+                            .font(.custom("Poppins-Bold", size: 24))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom)
                         
-                        VStack {
-                            Spacer()
-                            Image("Full Logo")
-                                .resizable()
-                                .frame(width: 180, height: 180)
-                            ZStack {
-                                VStack {
-                                    Text("Atlanta’s #1 In Person Training Available Worldwide")
-                                        .font(.custom("Poppins-Bold", size: 24))
-                                        .foregroundColor(.white)
-                                        .multilineTextAlignment(.center)
-                                        .padding(.bottom)
-                                    
-                                    NavigationLink(destination: EmptyView()) {
-                                        Text("Get Started")
-                                            .font(.custom("Poppins-SemiBold", size: 16))
-                                            .frame(minWidth: 100, maxWidth: .infinity, minHeight: 54, maxHeight: 44, alignment: .center)
-                                            .foregroundColor(.white)
-                                            .background(.green)
-                                            .cornerRadius(28)
-                                            .padding(.top)
-                                    }
-                                    .shadow(color: .green.opacity(0.25), radius: 6, x: 0, y: 2)
-                                    .padding(.bottom)
-
-                                    VStack {
-                                        NavigationLink(destination: SignInView()) {
-                                            HStack {
-                                                Text("Sign In")
-                                                    .font(.custom("Poppins-Regular", size: 16))
-                                                    .foregroundColor(.white)
-                                                Image(systemName: "chevron.forward")
-                                                    .font(.custom("Poppins-Regular", size: 12))
-                                                    .foregroundColor(.white)
-                                                    .aspectRatio(.infinity, contentMode: .fill)
-                                                    .animation(.easeInOut, value: 10)
-                                                //                                            }.padding()
-                                            }
-                                        }
-                                        HStack {
-                                            Text("By signing up you agree to  ")
-                                                .font(.custom("Poppins-Regular", size: 12)) +
-                                            Text("Living Fit Family's Terms of Service ")
-                                                .foregroundColor(.green)
-                                                .font(.custom("Poppins-Bold", size: 12)) +
-                                            Text("and ")
-                                                .font(.custom("Poppins-Light", size: 12)) +
-                                            Text("Membership Terms ")
-                                                .font(.custom("Poppins-Bold", size: 12))
-                                                .foregroundColor(.green) +
-                                            Text("and ")
-                                                .font(.custom("Poppins-Light", size: 12)) +
-                                            Text("Privacy Policy")
-                                                .font(.custom("Poppins-Bold", size: 12))
-                                                .foregroundColor(.green)
-                                        }
-                                        .foregroundColor(.white)
-                                        .multilineTextAlignment(.center)
-                                        .lineSpacing(2.0)
-                                        .padding()
-                                    }
+                        
+                            NavigationLink(destination: GenderSelectionView()) {
+                                ButtonView(title: "Get Started") {
                                 }
                             }
-                        }.padding()
+                        
+                        .padding(.bottom)
+                        NavigationLink(destination: SignInView()) {
+                            HStack {
+                                Text("Sign In")
+                                    .font(.custom("Poppins-Regular", size: 16))
+                                    .foregroundColor(.white)
+                                Image(systemName: "chevron.forward")
+                                    .font(.custom("Poppins-Regular", size: 12))
+                                    .foregroundColor(.white)
+                                    .aspectRatio(.infinity, contentMode: .fill)
+                                    .animation(.easeInOut, value: 10)
+                            }
+                        }.padding(.bottom)
+                    }
                 }
             }.background(.black)
         }

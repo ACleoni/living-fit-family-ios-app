@@ -7,27 +7,42 @@
 
 import SwiftUI
 
+extension View {
+    
+}
+
+
 struct SignInView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var email: String = ""
     @State var password: String = ""
     @State var showPassword: Bool = false
     
+    var btnBack : some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    }) {
+        HStack {
+            Image(systemName: "chevron.left") 
+                .resizable()
+                .scaledToFit()
+                .frame(width: 16, height: 16)
+                .foregroundColor(.black)
+        }
+    }
+    }
+    
     var body: some View {
         VStack {
             VStack {
-                Image("Alternate Logo")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 100)
-                Text("Welcome Back!")
-                    .font(.custom("Poppins-SemiBold", size: 30))
-                Text("Please sign in to your account")
-                    .font(.custom("Poppins-Regular", size: 15)).opacity(0.70)
-                    .padding(.bottom)
-            }
+                Text("Welcome Back").font(.custom("Poppins-SemiBold", size: 30))
+                Text("Please sign in to your acccount").font(.custom("Poppins-Regular", size: 15)).opacity(0.70)
+            }.padding(.bottom)
             
             VStack {
-                TextFieldView(text: $email, placeholder: "Email Address", keyboardType: .emailAddress)
+                HStack {
+                    TextFieldView(text: $email, placeholder: "Email Address", keyboardType: .emailAddress)
+                }
                 
                 HStack {
                     if !showPassword {
@@ -45,23 +60,25 @@ struct SignInView: View {
                             showPassword.toggle()
                         }
                 }
-            }
+            }.padding(.top)
             
             HStack {
-                Spacer()
                 Button(action: {
                     
                 }, label: {
                     Text("Forgot Password?")
-                        .foregroundColor(.colorPrimary)
+                        .font(.custom("Poppins-Regular", size: 14))
+                        .foregroundColor(Color(hex: "363636"))
+                        .underline()
+                        .opacity(0.70)
                 })
-            }
+            }.padding(.bottom)
             
-//            HStack {
+            HStack {
                 ButtonView(title: "Sign In") {
                     
                 }
-//            }
+            }.padding(.top)
             
             HStack {
                 HorizontalLineView()
@@ -71,15 +88,40 @@ struct SignInView: View {
             VStack {
                 LoginProviderView(provider: "apple")
                 LoginProviderView(provider: "google")
-
-            }
+                
+            }.padding(.bottom)
+            
+//            HStack {
+//                Text("By signing up you agree to Living Fit's ")
+//                    .font(.custom("Poppins-Regular", size: 12)) +
+//                Text(" Terms of Service ").underline()
+//                    .font(.custom("Poppins-Bold", size: 12)) +
+//                Text("and ")
+//                    .font(.custom("Poppins-Light", size: 12)) +
+//                Text("Membership Terms ")
+//                    .font(.custom("Poppins-Bold", size: 12)).underline() +
+//                Text("and ")
+//                    .font(.custom("Poppins-Light", size: 12)) +
+//                Text("Privacy Policy")
+//                    .font(.custom("Poppins-Bold", size: 12)).underline()
+//            }
+//            .foregroundColor(Color(hex: "363636"))
+//            .multilineTextAlignment(.center)
+//            .lineSpacing(2.0)
+            
             Spacer()
-        }.padding().ignoresSafeArea(.keyboard, edges: .bottom)
+        }
+        .padding()
+        .ignoresSafeArea(.keyboard, edges: .bottom)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: btnBack)
     }
 }
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        NavigationStack {
+            SignInView()
+        }
     }
 }

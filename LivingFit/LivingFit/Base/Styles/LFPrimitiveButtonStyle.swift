@@ -31,7 +31,7 @@ struct LFPrimitiveButtonStyle: PrimitiveButtonStyle {
                 }
             
             return configuration.label
-                .opacity(pressed ? 0.2 : 1.0)
+                .opacity(pressed ? 0.8 : 1.0)
                 .gesture(longPress)
         }
     }

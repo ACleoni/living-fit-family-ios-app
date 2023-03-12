@@ -8,25 +8,35 @@
 import SwiftUI
 
 struct SplashView: View {
-    @State var isActive: Bool = false
+    @State private var isActive: Bool = false
+    @State private var size = 0.8
+    @State private var opacity = 0.5
     
     var body: some View {
-        ZStack {
-            if self.isActive {
-                MainView()
-            } else {
-                Rectangle().background(.black)
-                Image("Living Fit Family")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
+        
+        if isActive {
+            MainView()
+        } else {
+            VStack {
+                VStack {
+                    Image("Full Logo Alt")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 350, height: 350)
+                }.scaleEffect(size)
+                    .opacity(opacity)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 1.2)) {
+                            self.size = 0.9
+                            self.opacity = 1.0
+                        }
+                    }
             }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                withAnimation {
-                    self.isActive.toggle()
-                    
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    withAnimation(.easeInOut) {
+                        self.isActive.toggle()
+                    }
                 }
             }
         }

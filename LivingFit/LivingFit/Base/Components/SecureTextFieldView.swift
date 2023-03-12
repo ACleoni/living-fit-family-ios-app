@@ -12,6 +12,7 @@ struct SecureTextFieldView: View {
     let placeholder: String
     let keyboardType: UIKeyboardType;
     
+    
     var body: some View {
         SecureField(placeholder, text: $password)
             .textFieldStyle(LFTextFieldStyle())
